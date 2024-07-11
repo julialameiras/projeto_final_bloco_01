@@ -1,9 +1,13 @@
 import readlinesync = require("readline-sync");
 import { colors } from "./Color";
+import { Produto } from "./src/model/Produto";
+import { Consolo } from "./src/model/Consolo";
 
 let opcao: number;
 
 export function main() {
+
+    const consolo: Consolo = new Consolo(158160, "Consolo Magick Mike", 1, 290, 17, "verde");
 
     while (true) {
 
